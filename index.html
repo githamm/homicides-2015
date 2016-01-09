@@ -1,6 +1,7 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html class="no-js" lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,99 +10,960 @@
     <link rel="stylesheet" href="css/app.css" />
 
     <style>
-      body {
-        background-color: rgba(254,252,255,1.0);
-        color: rgba(17,17,17,1.0);
+        body {
+            background-color: rgba(254, 252, 255, 1.0);
+            color: rgba(17, 17, 17, 1.0);
         }
-      .sidebar {
-        float: right;
-        width: 40%;
-        border-left: 2px solid rgba(0,0,0,0.1);
-        padding-left: 25px;
-        margin-top: 50px;
-        margin-left: 50px;
-        margin-bottom: 40px;
-      }
-      p {
-        font-family: Georgia, serif;
-        font-size: 20px;
-        letter-spacing: .4px;
-      }
-      p.section-hed {
-        font-size: 19px;
-        font-weight: bold;
-        line-height: 25px;
-        margin-top: 45px;
-        margin-bottom: -3px;
-      }
-      p.sidebar-hed {
-        font-size: 36px;
-        line-height: 40px;
-      }
-      .top-bar {
-        background-color: rgba(254,252,255,1.0);
-        border-bottom: 2px solid rgba(0,0,0,0.1);
-      }
-      @media screen and (max-width:600px) {
         .sidebar {
-          float: left;
-          width: 90%;
-          border-top: 2px solid rgba(0,0,0,0.1);
-          border-bottom: 2px solid rgba(0,0,0,0.1);
-          border-left: none;
-          padding-top: 15px;
-          margin-top: 30px;
-          margin-bottom: 40px;
-          margin-left: 0px;
+            float: right;
+            width: 40%;
+            border-left: 2px solid rgba(0, 0, 0, 0.1);
+            padding-left: 25px;
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-bottom: 40px;
         }
-      }
+        h1.main-hed {
+            font-family: Georgia, serif;
+            font-size: 60px;
+            line-height: 63px;
+            margin-bottom: 17px;
+        }
+        h2.sub-hed {
+            font-family: Georgia, serif;
+            font-size: 36px;
+            font-style: italic;
+            margin-bottom: 30px;
+            line-height: 32px;
+        }
+        p.graphic-hed {
+            font-family: Georgia, serif;
+            font-size: 36px;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+        }
+        p {
+            font-family: Georgia, serif;
+            font-size: 20px;
+            letter-spacing: .4px;
+        }
+        p.byline {
+            font-family: Georgia, serif;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+        p.cutline {
+        	font-family: Georgia, serif;
+        	font-size: 15px;
+        	line-height: 19px;
+        }
+        p.section-hed {
+            font-size: 19px;
+            font-weight: bold;
+            line-height: 25px;
+            margin-top: 45px;
+            margin-bottom: -1px;
+        }
+        p.sidebar-hed {
+            font-size: 36px;
+            line-height: 36px;
+        }
+        p.sidebar-text {
+        	font-family: Georgia, serif;
+        	font-size: 18px;
+        	line-height: 24px;
+        }
+        p.image-topper {
+        	font-family: Georgia, serif;
+        	font-size: 14px;
+        	font-weight: bold;
+        	margin-bottom: 4px;
+        }
+        .top-bar {
+            background-color: rgba(254, 252, 255, 1.0);
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        }
+        table.homicide {
+			float: left;
+			width: 15.5%;
+			margin: 6px;
+		}
+		thead, tbody, tfoot {
+			border: 1px solid rgba(0,0,0,0.1);
+			background-color: rgba(254, 252, 255, 1.0);
+		}
+		td {
+			text-align: center;
+			width: 14%;
+		}
+		tbody th, tbody td {
+			padding: 2.5px;
+			border: 1px solid lightgray;
+		}
+		tbody tr:nth-child(even) {
+			background-color: inherit;
+		}
+		td.homicide-1 {
+			background-color: rgba(255,0,0,0.4);
+		}
+		td.homicide-2 {
+			background-color: rgba(255,0,0,0.7);
+		}
+		td.homicide-3 {
+			background-color: rgba(255,0,0,1.0);
+		}
+		td.homicide-police {
+			background-color: rgba(0,0,160,0.5);
+		}
+		td.homicide-vehicular {
+			background-color: rgba(0,0,0,0.5);
+		}
+        img.image-sidebar {
+        	margin-bottom: 15px;
+        }
+        @media screen and (max-width: 600px) {
+            .sidebar {
+                float: left;
+                width: 90%;
+                border-top: 2px solid rgba(0, 0, 0, 0.1);
+                border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+                border-left: none;
+                padding-top: 15px;
+                margin-top: 30px;
+                margin-bottom: 40px;
+                margin-left: 0px;
+            }
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="top-bar">
-      <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="menu-text">Site Title</li>          
-        </ul>
-      </div>
-      <div class="top-bar-right">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="has-submenu">
-            <a href="#">One</a>
-            <ul class="submenu menu vertical" data-submenu>
-              <li><a href="#">One</a></li>
-              <li><a href="#">Two</a></li>
-              <li><a href="#">Three</a></li>
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">Site Title</li>
             </ul>
-          </li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
-        </ul>
-      </div>
+        </div>
+        <div class="top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li class="has-submenu">
+                    <a href="#">One</a>
+                    <ul class="submenu menu vertical" data-submenu>
+                        <li><a href="#">One</a>
+                        </li>
+                        <li><a href="#">Two</a>
+                        </li>
+                        <li><a href="#">Three</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Two</a>
+                </li>
+                <li><a href="#">Three</a>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <div class="row">
-      <div class="large-9 large-centered columns">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat nisl non ante finibus iaculis. Donec id massa lorem. Nullam nisi nulla, dictum vitae lectus a, consectetur convallis augue. Nunc lacinia turpis est, a facilisis nisl lacinia et. Aenean id magna magna. Sed lorem mauris, maximus ac ante eu, rutrum sollicitudin nisi. Sed ut feugiat nulla. Aliquam porta placerat dui non luctus. Suspendisse nec posuere ipsum, eu ornare metus. Morbi non velit ac nulla dictum egestas sed nec tortor. Vestibulum posuere venenatis gravida. In tempor libero ac pellentesque posuere. In rhoncus, eros eu ultricies porta, lacus lectus sagittis nunc, a ultricies dolor nibh quis nulla. Sed ac turpis ipsum. Cras ante diam, cursus et nulla ac, euismod euismod tellus.</p>
-        
-        <div class="sidebar">
-          <p class="sidebar-hed">Donec feugiat nisl non ante finibus iaculis</p>
-          <p>In hac habitasse platea dictumst. Nullam arcu leo, posuere hendrerit libero ac, consectetur mattis libero. Integer vitae sem libero. Cras ut finibus diam. Vestibulum massa neque, pulvinar vitae rhoncus ut, fringilla a risus.</p>
-          <p>Etiam hendrerit lacinia nisl ac bibendum. Nam ac elit eget est vehicula mollis in sit amet tortor. Morbi condimentum eu erat id aliquet. Cras quam leo, pulvinar vitae condimentum vitae, varius vitae nunc. Ut ullamcorper ultricies leo eu faucibus. In molestie ullamcorper nisi a tristique.</p>
-          <p>Sed dignissim enim dolor, ac volutpat arcu volutpat sed. Aliquam sagittis volutpat nibh, ut imperdiet enim sagittis id. Donec malesuada odio orci, ac ultricies arcu efficitur eget. Duis eu nulla condimentum, vestibulum mi vulputate, maximus augue.</p>
+        <div class="large-10 large-centered columns">
+            <h1 class="main-hed">Cras ante diam, cursus et nulla ac, euismod euismod tellus</h1>
+            <h2 class="sub-hed">Nullam nisi nulla, dictum vitae lectus a, consectetur convallis augue</h2>
         </div>
+    </div>
 
-        <p>Aenean non posuere massa. Mauris consequat, eros sit amet aliquet pharetra, elit purus mollis orci, sed tempor libero turpis sed augue. Duis viverra, eros a faucibus dictum, dui lorem fermentum massa, sit amet molestie libero erat quis purus. Phasellus lacinia semper arcu, sit amet viverra ante iaculis eget. Maecenas pulvinar, nunc sed suscipit imperdiet, orci diam egestas tortor, ac scelerisque dolor mi et purus. In non aliquam libero, euismod eleifend ipsum. Duis eget mollis quam.</p>
-        <p class="section-hed">PHASELLUS NON AUCTOR LECTUS</p>
-        <p>Phasellus non auctor lectus, eu rhoncus sapien. Duis eu metus vitae turpis eleifend vestibulum ut et nibh. In id massa tellus. In congue laoreet molestie. Nulla sed enim leo. Donec nisl lacus, tempor non elementum in, dignissim vitae quam. Suspendisse leo felis, tempus a tristique et, ornare quis nulla. Curabitur tempus pulvinar tortor. Cras a ex libero. Donec vel nisi molestie, rhoncus dolor et, dignissim quam. Morbi dignissim mi a lorem pretium, vel interdum tellus dictum.</p>
-        <p>In hac habitasse platea dictumst. Nullam arcu leo, posuere hendrerit libero ac, consectetur mattis libero. Integer vitae sem libero. Cras ut finibus diam. Vestibulum massa neque, pulvinar vitae rhoncus ut, fringilla a risus. Etiam hendrerit lacinia nisl ac bibendum. Nam ac elit eget est vehicula mollis in sit amet tortor. Morbi condimentum eu erat id aliquet. Cras quam leo, pulvinar vitae condimentum vitae, varius vitae nunc. Ut ullamcorper ultricies leo eu faucibus. In molestie ullamcorper nisi a tristique. Sed dignissim enim dolor, ac volutpat arcu volutpat sed. Aliquam sagittis volutpat nibh, ut imperdiet enim sagittis id. Donec malesuada odio orci, ac ultricies arcu efficitur eget. Duis eu nulla condimentum, vestibulum mi vulputate, maximus augue.</p>
-        <p>Morbi sit amet risus nec massa gravida sodales. Nam tellus est, blandit sit amet purus ac, sodales hendrerit risus. Vivamus efficitur nisl et laoreet interdum. Ut sollicitudin convallis maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis congue augue a quam ultricies iaculis. Nulla quis euismod nibh, id dignissim diam.</p>
-      </div>
+    <div class="row">
+        <div class="large-9 large-centered columns">
+            <p class="byline">By Noelle Phillips &bull; Jan. 17, 2016</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat nisl non ante finibus iaculis. Donec id massa lorem. Nullam nisi nulla, dictum vitae lectus a, consectetur convallis augue. Nunc lacinia turpis est, a facilisis nisl lacinia et. Aenean id magna magna. Sed lorem mauris, maximus ac ante eu, rutrum sollicitudin nisi. Sed ut feugiat nulla. Aliquam porta placerat dui non luctus. Suspendisse nec posuere ipsum, eu ornare metus. Morbi non velit ac nulla dictum egestas sed nec tortor. Vestibulum posuere venenatis gravida. In tempor libero ac pellentesque posuere. In rhoncus, eros eu ultricies porta, lacus lectus sagittis nunc, a ultricies dolor nibh quis nulla. Sed ac turpis ipsum. Cras ante diam, cursus et nulla ac, euismod euismod tellus.</p>
+            <p>Aenean non posuere massa. Mauris consequat, eros sit amet aliquet pharetra, elit purus mollis orci, sed tempor libero turpis sed augue. Duis viverra, eros a faucibus dictum, dui lorem fermentum massa, sit amet molestie libero erat quis purus. Phasellus lacinia semper arcu, sit amet viverra ante iaculis eget. Maecenas pulvinar, nunc sed suscipit imperdiet, orci diam egestas tortor, ac scelerisque dolor mi et purus. In non aliquam libero, euismod eleifend ipsum. Duis eget mollis quam.</p>
+            <p class="section-hed">PHASELLUS NON AUCTOR LECTUS</p>
+            <p>Phasellus non auctor lectus, eu rhoncus sapien. Duis eu metus vitae turpis eleifend vestibulum ut et nibh. In id massa tellus. In congue laoreet molestie. Nulla sed enim leo. Donec nisl lacus, tempor non elementum in, dignissim vitae quam. Suspendisse leo felis, tempus a tristique et, ornare quis nulla. Curabitur tempus pulvinar tortor. Cras a ex libero. Donec vel nisi molestie, rhoncus dolor et, dignissim quam. Morbi dignissim mi a lorem pretium, vel interdum tellus dictum.</p>
+            <p>In hac habitasse platea dictumst. Nullam arcu leo, posuere hendrerit libero ac, consectetur mattis libero. Integer vitae sem libero. Cras ut finibus diam. Vestibulum massa neque, pulvinar vitae rhoncus ut, fringilla a risus. Etiam hendrerit lacinia nisl ac bibendum. Nam ac elit eget est vehicula mollis in sit amet tortor. Morbi condimentum eu erat id aliquet. Cras quam leo, pulvinar vitae condimentum vitae, varius vitae nunc. Ut ullamcorper ultricies leo eu faucibus. In molestie ullamcorper nisi a tristique. Sed dignissim enim dolor, ac volutpat arcu volutpat sed. Aliquam sagittis volutpat nibh, ut imperdiet enim sagittis id. Donec malesuada odio orci, ac ultricies arcu efficitur eget. Duis eu nulla condimentum, vestibulum mi vulputate, maximus augue.</p>
+            <p>Morbi sit amet risus nec massa gravida sodales. Nam tellus est, blandit sit amet purus ac, sodales hendrerit risus. Vivamus efficitur nisl et laoreet interdum. Ut sollicitudin convallis maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis congue augue a quam ultricies iaculis. Nulla quis euismod nibh, id dignissim diam.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-12 columns">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Street_Scene_2%2C_Tehran_%2814471827341%29.jpg" />
+            <p class="cutline">Maecenas pulvinar, nunc sed suscipit imperdiet, orci diam egestas tortor, ac scelerisque dolor mi et purus. In non aliquam libero, euismod eleifend ipsum. Duis eget mollis quam. <em>By RJ Sangosti, The Denver Post</em></p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-9 large-centered columns">
+            <p>Aenean non posuere massa. Mauris consequat, eros sit amet aliquet pharetra, elit purus mollis orci, sed tempor libero turpis sed augue. Duis viverra, eros a faucibus dictum, dui lorem fermentum massa, sit amet molestie libero erat quis purus. Phasellus lacinia semper arcu, sit amet viverra ante iaculis eget. Maecenas pulvinar, nunc sed suscipit imperdiet, orci diam egestas tortor, ac scelerisque dolor mi et purus. In non aliquam libero, euismod eleifend ipsum. Duis eget mollis quam.</p>
+            <p class="section-hed">PHASELLUS NON AUCTOR LECTUS</p>
+            <p>Phasellus non auctor lectus, eu rhoncus sapien. Duis eu metus vitae turpis eleifend vestibulum ut et nibh. In id massa tellus. In congue laoreet molestie. Nulla sed enim leo. Donec nisl lacus, tempor non elementum in, dignissim vitae quam. Suspendisse leo felis, tempus a tristique et, ornare quis nulla. Curabitur tempus pulvinar tortor. Cras a ex libero. Donec vel nisi molestie, rhoncus dolor et, dignissim quam. Morbi dignissim mi a lorem pretium, vel interdum tellus dictum.</p>
+
+            <div class="sidebar">
+            	<p class="image-topper">GUSTAV MAHLER 1926-1974</p>
+            	<img class="image-sidebar" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Gustav-Mahler-Kohut.jpg">
+                <p class="sidebar-hed">Donec feugiat nisl non ante finibus iaculis</p>
+                <p class="sidebar-text">In hac habitasse platea dictumst. Nullam arcu leo, posuere hendrerit libero ac, consectetur mattis libero. Integer vitae sem libero. Cras ut finibus diam. Vestibulum massa neque, pulvinar vitae rhoncus ut, fringilla a risus.</p>
+                <p class="sidebar-text">Etiam hendrerit lacinia nisl ac bibendum. Nam ac elit eget est vehicula mollis in sit amet tortor. Morbi condimentum eu erat id aliquet. Cras quam leo, pulvinar vitae condimentum vitae, varius vitae nunc. Ut ullamcorper ultricies leo eu faucibus. In molestie ullamcorper nisi a tristique. <a data-open="sidebar-1"><em>Read more</em></a></p>
+				<div class="reveal" id="sidebar-1" data-reveal>
+					<p class="sidebar-text">Phasellus non auctor lectus, eu rhoncus sapien. Duis eu metus vitae turpis eleifend vestibulum ut et nibh. In id massa tellus. In congue laoreet molestie. Nulla sed enim leo. Donec nisl lacus, tempor non elementum in, dignissim vitae quam. Suspendisse leo felis, tempus a tristique et, ornare quis nulla. Curabitur tempus pulvinar tortor. Cras a ex libero. Donec vel nisi molestie, rhoncus dolor et, dignissim quam. Morbi dignissim mi a lorem pretium, vel interdum tellus dictum.</p>
+	            	<p class="sidebar-text">In hac habitasse platea dictumst. Nullam arcu leo, posuere hendrerit libero ac, consectetur mattis libero. Integer vitae sem libero. Cras ut finibus diam. Vestibulum massa neque, pulvinar vitae rhoncus ut, fringilla a risus. Etiam hendrerit lacinia nisl ac bibendum. Nam ac elit eget est vehicula mollis in sit amet tortor. Morbi condimentum eu erat id aliquet. Cras quam leo, pulvinar vitae condimentum vitae, varius vitae nunc. Ut ullamcorper ultricies leo eu faucibus. In molestie ullamcorper nisi a tristique. Sed dignissim enim dolor, ac volutpat arcu volutpat sed. Aliquam sagittis volutpat nibh, ut imperdiet enim sagittis id. Donec malesuada odio orci, ac ultricies arcu efficitur eget. Duis eu nulla condimentum, vestibulum mi vulputate, maximus augue.</p>
+	            	<p class="sidebar-text">Morbi sit amet risus nec massa gravida sodales. Nam tellus est, blandit sit amet purus ac, sodales hendrerit risus. Vivamus efficitur nisl et laoreet interdum. Ut sollicitudin convallis maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis congue augue a quam ultricies iaculis. Nulla quis euismod nibh, id dignissim diam.</p>
+				  	<button class="close-button" data-close aria-label="Close reveal" type="button">
+				    	<span aria-hidden="true">&times;</span>
+				  	</button>
+				</div>
+			</div>
+
+            <p>In hac habitasse platea dictumst. Nullam arcu leo, posuere hendrerit libero ac, consectetur mattis libero. Integer vitae sem libero. Cras ut finibus diam. Vestibulum massa neque, pulvinar vitae rhoncus ut, fringilla a risus. Etiam hendrerit lacinia nisl ac bibendum. Nam ac elit eget est vehicula mollis in sit amet tortor. Morbi condimentum eu erat id aliquet. Cras quam leo, pulvinar vitae condimentum vitae, varius vitae nunc. Ut ullamcorper ultricies leo eu faucibus. In molestie ullamcorper nisi a tristique. Sed dignissim enim dolor, ac volutpat arcu volutpat sed. Aliquam sagittis volutpat nibh, ut imperdiet enim sagittis id. Donec malesuada odio orci, ac ultricies arcu efficitur eget. Duis eu nulla condimentum, vestibulum mi vulputate, maximus augue.</p>
+            <p>Morbi sit amet risus nec massa gravida sodales. Nam tellus est, blandit sit amet purus ac, sodales hendrerit risus. Vivamus efficitur nisl et laoreet interdum. Ut sollicitudin convallis maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis congue augue a quam ultricies iaculis. Nulla quis euismod nibh, id dignissim diam.</p>
+            <p>Aenean non posuere massa. Mauris consequat, eros sit amet aliquet pharetra, elit purus mollis orci, sed tempor libero turpis sed augue. Duis viverra, eros a faucibus dictum, dui lorem fermentum massa, sit amet molestie libero erat quis purus. Phasellus lacinia semper arcu, sit amet viverra ante iaculis eget. Maecenas pulvinar, nunc sed suscipit imperdiet, orci diam egestas tortor, ac scelerisque dolor mi et purus. In non aliquam libero, euismod eleifend ipsum. Duis eget mollis quam.</p>
+            <p class="section-hed">PHASELLUS NON AUCTOR LECTUS</p>
+            <p>Phasellus non auctor lectus, eu rhoncus sapien. Duis eu metus vitae turpis eleifend vestibulum ut et nibh. In id massa tellus. In congue laoreet molestie. Nulla sed enim leo. Donec nisl lacus, tempor non elementum in, dignissim vitae quam. Suspendisse leo felis, tempus a tristique et, ornare quis nulla. Curabitur tempus pulvinar tortor. Cras a ex libero. Donec vel nisi molestie, rhoncus dolor et, dignissim quam. Morbi dignissim mi a lorem pretium, vel interdum tellus dictum.</p>
+            <p>In hac habitasse platea dictumst. Nullam arcu leo, posuere hendrerit libero ac, consectetur mattis libero. Integer vitae sem libero. Cras ut finibus diam. Vestibulum massa neque, pulvinar vitae rhoncus ut, fringilla a risus. Etiam hendrerit lacinia nisl ac bibendum. Nam ac elit eget est vehicula mollis in sit amet tortor. Morbi condimentum eu erat id aliquet. Cras quam leo, pulvinar vitae condimentum vitae, varius vitae nunc. Ut ullamcorper ultricies leo eu faucibus. In molestie ullamcorper nisi a tristique. Sed dignissim enim dolor, ac volutpat arcu volutpat sed. Aliquam sagittis volutpat nibh, ut imperdiet enim sagittis id. Donec malesuada odio orci, ac ultricies arcu efficitur eget. Duis eu nulla condimentum, vestibulum mi vulputate, maximus augue.</p>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+    	<div class="large-12 large-centered columns">
+    		<p class="graphic-hed">When they were killed</p>
+    		<table class="homicide">
+					<tr>
+						<th colspan="7">January</th>
+					</tr>
+					<tr>
+						<th>S</th>
+						<th>M</th>
+						<th>T</th>
+						<th>W</th>
+						<th>T</th>
+						<th>F</th>
+						<th>S</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td class="homicide-1" title="Daerius Churchill, 22 &bull; Clayton">4</td>
+						<td>5</td>
+						<td>6</td>
+						<td class="homicide-2" title="John Shoeboot, 53, and James Brown III, 42 &bull; East Colfax">7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td class="homicide-1" title="Abdul Muhammad, 22 &bull; North Capitol Hill">16</td>
+						<td>17</td>
+					</tr>
+					<tr>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+					</tr>
+					<tr>
+						<td>25</td>
+						<td class="homicide-police" title="Jessica Hernandez, 17 &bull; North Park Hill">26</td>
+						<td>27</td>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+						<td>31</td>
+					</tr>
+				</table>
+				<table class="homicide">
+					<tr>
+						<th colspan="7">February</th>
+					</tr>
+					<tr>
+						<th>S</th>
+						<th>M</th>
+						<th>T</th>
+						<th>W</th>
+						<th>T</th>
+						<th>F</th>
+						<th>S</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td class="homicide-1" title="Francis Canham, 66 &bull; Sloan Lake">4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+					</tr>
+					<tr>
+						<td class="homicide-1" title="Marlow Jenkins-Martin, 27 &bull; Civic Center">15</td>
+						<td>16</td>
+						<td class="homicide-1" title="Randy Canister III, 19 &bull; Green Valley Ranch">17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+					</tr>
+					<tr>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				<table class="homicide">
+					<tr>
+						<th colspan="7">March</th>
+					</tr>
+					<tr>
+						<th>S</th>
+						<th>M</th>
+						<th>T</th>
+						<th>W</th>
+						<th>T</th>
+						<th>F</th>
+						<th>S</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+					</tr>
+					<tr>
+						<td class="homicide-3" title="Tyrael Adams, 28, and De.Anthony Williams, 30 &bull; Hilltop; Jeffrey Starks, 27 &bull; Northeast Park Hill; David Edwards, 53 &bull; Cole">15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+					</tr>
+					<tr>
+						<td>22</td>
+						<td>23</td>
+						<td class="homicide-1" title="Rachel Aboytes, 21 &bull; East Colfax">24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+					</tr>
+					<tr>
+						<td>29</td>
+						<td>30</td>
+						<td>31</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				<table class="homicide">
+					<tr>
+						<th colspan="7">April</th>
+					</tr>
+					<tr>
+						<th>S</th>
+						<th>M</th>
+						<th>T</th>
+						<th>W</th>
+						<th>T</th>
+						<th>F</th>
+						<th>S</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td class="homicide-1" title="Edward Evans Jr., 62 &bull; Five Points">4</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td class="homicide-1" title="Abdul Muhammad, 61 &bull; Cole">11</td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+					</tr>
+					<tr>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td class="homicide-1" title="Christopher Flores, 21 &bull; Globeville">24</td>
+						<td class="homicide-1" title="Nolan Ware, 22 &bull; Cole">25</td>
+					</tr>
+					<tr>
+						<td>26</td>
+						<td>27</td>
+						<td class="homicide-1" title="Dominique Perez, 26 &bull; Cole">28</td>
+						<td>29</td>
+						<td>30</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				<table class="homicide">
+					<tr>
+						<th colspan="7">May</th>
+					</tr>
+					<tr>
+						<th>S</th>
+						<th>M</th>
+						<th>T</th>
+						<th>W</th>
+						<th>T</th>
+						<th>F</th>
+						<th>S</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td class="homicide-1" title="Samuel Grady, 61 &bull; Regis">6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+					</tr>
+					<tr>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+					</tr>
+					<tr>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>31</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				<table class="homicide">
+					<tr>
+						<th colspan="7">June</th>
+					</tr>
+					<tr>
+						<th>S</th>
+						<th>M</th>
+						<th>T</th>
+						<th>W</th>
+						<th>T</th>
+						<th>F</th>
+						<th>S</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+					</tr>
+					<tr>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+					</tr>
+					<tr>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td class="homicide-1" title="Camille Harrell, 29 &bull; East Colfax">25</td>
+						<td>26</td>
+						<td>27</td>
+					</tr>
+					<tr>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-12 large-centered columns">
+				<table class="homicide">
+					<tr>
+						<th colspan="7">July</th>
+					</tr>
+					<tr>
+						<th>S</th>
+						<th>M</th>
+						<th>T</th>
+						<th>W</th>
+						<th>T</th>
+						<th>F</th>
+						<th>S</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>1</td>
+						<td class="homicide-1" title="Harry McCabe Jr., 25 &bull; College View-South Platte">2</td>
+						<td class="homicide-1" title="William Romo Rodriguez, 41 &bull; Westwood">3</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td class="homicide-1" title="Javion Johnson, 1 &bull; City Park West">8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+					</tr>
+					<tr>
+						<td class="homicide-1" title="Paul Castaway, 35 &bull; Westwood">12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+					</tr>
+					<tr>
+						<td class="homicide-1" title="Carlos Ruiz-Reyes, 22 &bull; Barnum West">19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+					</tr>
+					<tr>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+						<td class="homicide-1" title="Eric Walker, 46 &bull; Clayton">29</td>
+						<td>30</td>
+						<td class="homicide-2" title="Jorge Lopez-Ramirez, 17 &bull; Ruby Hill; Dydrick Martin, 47 &bull; Montbello">31</td>
+						<td></td>
+					</tr>
+				</table>
+				<table class="homicide">
+					<tr>
+						<th colspan="7">August</th>
+					</tr>
+					<tr>
+						<th>S</th>
+						<th>M</th>
+						<th>T</th>
+						<th>W</th>
+						<th>T</th>
+						<th>F</th>
+						<th>S</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td class="homicide-circle" title="title here">4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+					</tr>
+					<tr>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+					</tr>
+					<tr>
+						<td>29</td>
+						<td>30</td>
+						<td>31</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				<table class="homicide">
+					<tr>
+						<th colspan="7">September</th>
+					</tr>
+					<tr>
+						<th>S</th>
+						<th>M</th>
+						<th>T</th>
+						<th>W</th>
+						<th>T</th>
+						<th>F</th>
+						<th>S</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td class="homicide-circle" title="title here">4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+					</tr>
+					<tr>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+					</tr>
+					<tr>
+						<td>29</td>
+						<td>30</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				<table class="homicide">
+					<tr>
+						<th colspan="7">October</th>
+					</tr>
+					<tr>
+						<th>S</th>
+						<th>M</th>
+						<th>T</th>
+						<th>W</th>
+						<th>T</th>
+						<th>F</th>
+						<th>S</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td class="homicide-circle" title="title here">4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+					</tr>
+					<tr>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+					</tr>
+					<tr>
+						<td>29</td>
+						<td>30</td>
+						<td>31</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				<table class="homicide">
+					<tr>
+						<th colspan="7">November</th>
+					</tr>
+					<tr>
+						<th>S</th>
+						<th>M</th>
+						<th>T</th>
+						<th>W</th>
+						<th>T</th>
+						<th>F</th>
+						<th>S</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td class="homicide-circle" title="title here">4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+					</tr>
+					<tr>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+					</tr>
+					<tr>
+						<td>29</td>
+						<td>30</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				<table class="homicide">
+					<tr>
+						<th colspan="7">December</th>
+					</tr>
+					<tr>
+						<th>S</th>
+						<th>M</th>
+						<th>T</th>
+						<th>W</th>
+						<th>T</th>
+						<th>F</th>
+						<th>S</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td class="homicide-circle" title="title here">4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+					</tr>
+					<tr>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+					</tr>
+					<tr>
+						<td>29</td>
+						<td>30</td>
+						<td>31</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+    	</div>
+    </div>
+
+    <div class="row">
+    	<div class="large-9 large-centered">
+    		<hr>
+    		<p class="graphic-hed">Where they were killed</p>
+    		<p class="graphic-hed">How they were killed</p>
+    	</div>
     </div>
 
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
-  </body>
+</body>
+
 </html>
