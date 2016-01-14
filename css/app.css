@@ -162,4 +162,7 @@ img.image-sidebar {
         margin-bottom: 40px;
         margin-left: 0px;
     }
+    #pie-desktop {
+        visibility: hidden;
+    }
 }
