@@ -1,0 +1,165 @@
+body {
+    background-color: rgba(254, 252, 255, 1.0);
+    color: rgba(17, 17, 17, 1.0);
+}
+.sidebar {
+    float: right;
+    width: 40%;
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
+    padding-left: 25px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+h1.main-hed {
+    font-family: Georgia, serif;
+    font-size: 60px;
+    line-height: 63px;
+    margin-bottom: 17px;
+}
+h2.sub-hed {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-style: italic;
+    margin-bottom: 30px;
+    line-height: 32px;
+}
+p.graphic-hed {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+p {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    letter-spacing: .4px;
+}
+p.byline {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+p.cutline {
+	font-family: Georgia, serif;
+	font-size: 15px;
+	line-height: 19px;
+}
+p.section-hed {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 25px;
+    margin-top: 45px;
+    margin-bottom: -1px;
+}
+p.sidebar-hed {
+    font-size: 36px;
+    line-height: 36px;
+}
+p.sidebar-text {
+	font-family: Georgia, serif;
+	font-size: 18px;
+	line-height: 24px;
+}
+p.image-topper {
+	font-family: Georgia, serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+.top-bar {
+    background-color: rgba(254, 252, 255, 1.0);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+table.homicide {
+		float: left;
+  width: 22.5%;
+		margin: 6px;
+	}
+	thead, tbody, tfoot {
+		border: 1px solid rgba(0,0,0,0.1);
+		background-color: rgba(254, 252, 255, 1.0);
+	}
+	th {
+  font-size: 14px;
+}
+td {
+	font-size: 14px;
+    text-align: center;
+	width: 14%;
+}
+tbody th, tbody td {
+	padding: 2.5px;
+	border: 1px solid lightgray;
+}
+tbody tr:nth-child(even) {
+	background-color: inherit;
+}
+td.homicide-1 {
+	background-color: rgba(255,0,0,0.3);
+}
+td.homicide-2 {
+	background-color: rgba(255,0,0,1.0);
+}
+td.homicide-3 {
+	background-color: rgba(255,0,0,1.0);
+}
+td.homicide-police {
+	background-color: rgba(0,0,160,0.3);
+}
+td.homicide-vehicular {
+	background-color: rgba(0,0,0,0.5);
+}
+img.image-sidebar {
+	margin-bottom: 15px;
+}
+#dot-legend {
+    margin-top: -15px;
+    float: right;
+}
+#legend-black { 
+    width: 12px; 
+    height: 12px; 
+    background-color: rgba(0,0,0,0.8); 
+    /* border: 1px solid rgba(0,0,0,0.7); */
+    display: inline-block;
+}
+#legend-hispanic { 
+    width: 12px; 
+    height: 12px; 
+    background-color: rgba(0,0,0,0.5);
+    display: inline-block;
+}
+#legend-white { 
+    width: 12px; 
+    height: 12px; 
+    background-color: rgba(0,0,0,0.2);
+    display: inline-block;
+}
+#legend-male { 
+    width: 12px; 
+    height: 12px; 
+    background-color: rgba(0,0,0,0.8); 
+    display: inline-block;
+}
+#legend-female { 
+    width: 12px; 
+    height: 12px; 
+    background-color: rgba(0,0,0,0.5);
+    display: inline-block;
+}
+@media screen and (max-width: 600px) {
+    .sidebar {
+        float: left;
+        width: 90%;
+        border-top: 2px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        border-left: none;
+        padding-top: 15px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        margin-left: 0px;
+    }
+}
