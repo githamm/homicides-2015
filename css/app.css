@@ -27,9 +27,15 @@ h2.sub-hed {
 p.graphic-hed {
     font-family: Georgia, serif;
     font-size: 36px;
+    line-height: 34px;
     font-weight: bold;
     font-style: italic;
     text-align: center;
+    margin-bottom: -12px;
+}
+p.graphic-intro {
+    font-size: 18px;
+    line-height: 18px;
 }
 p {
     font-family: Georgia, serif;
@@ -68,6 +74,24 @@ p.image-topper {
 	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: 4px;
+}
+p.source {
+    font-size: 13px;
+    font-style: italic;
+    text-align: right;
+}
+p.chart-note {
+    font-size: 13px;
+    line-height: 15px;
+}
+p.phone-note {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    color: red;
+    text-align: center;
+    line-height: 20px;
+    margin: 0px 20px 0px 20px;
 }
 .top-bar {
     background-color: rgba(254, 252, 255, 1.0);
@@ -150,6 +174,16 @@ img.image-sidebar {
     background-color: rgba(0,0,0,0.5);
     display: inline-block;
 }
+canvas {
+    margin-top: 20px;
+}
+#canvas-bar {
+    width: 100%;
+    margin-top: 0px;
+}
+#canvas-pie {
+    width: 90%;
+}
 @media screen and (max-width: 600px) {
     .sidebar {
         float: left;
@@ -162,7 +196,14 @@ img.image-sidebar {
         margin-bottom: 40px;
         margin-left: 0px;
     }
-    #pie-desktop {
+}
+@media screen and (max-width: 475px) {
+    #bar-chart {
+        visibility: hidden;
+    }
+}
+@media screen and (min-width: 475px) {
+    #bar-chart-note {
         visibility: hidden;
     }
 }

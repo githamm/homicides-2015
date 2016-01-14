@@ -83,14 +83,33 @@
         </div>
     </div>
 
-    <div class="row" id="pie-desktop">
+    <div id="bar-chart-note">
+    	<p class="phone-note">Turn your device sideways to see a bar chart of 2015 homicide rates for the largest cities in the United States</p>
+    </div>
+
+    <div class="row" id="bar-chart">
         <div class="large-10 large-centered medium-12 medium-centered small-12 columns">
-            <div class="large-4 medium-4 small-4 columns" id="canvas-holder">
+        	<div id="canvas-bar">
+        		<p class="graphic-hed">Homicides rates in the United States</p><hr />
+        		<p class="graphic-intro">The chart shows 2015 per-capita homicide rates* for the 30 largest cities in the United States. Cities are ordered by population size.
+                <canvas id="brennan"></canvas>
+                <p class="source">Source: <a href="https://www.brennancenter.org/publication/crime-2015-preliminary-analysis">Brennan Center for Justice</a></p>
+                <p class="chart-note">* Per the report, all rates are projections based on data available as of Dec. 23, 2015; data was unavailable for: San Francisco, Calif.; Indianapolis, Ind.; Columbus, Ohio; El Paso, Tex.; and Nashville, Tenn. For Denver, we used 50 homicides, as reported by the Denver Police Department, to calculate the rate. 
+            </div>
+         </div>
+    </div>
+
+    <div class="row" id="pie-charts">
+        <div class="large-10 large-centered medium-12 medium-centered small-12 columns">
+            <div class="large-4 medium-4 small-4 columns">
+                <div id="canvas-pie">
                 <p>Homicides by cause</p>
                 <canvas id="cause" width="250px" height="250px"></canvas>
+                </div>
             </div>
 
-            <div class="large-4 medium-4 small-4 columns" id="canvas-holder">
+            <div class="large-4 medium-4 small-4 columns">
+            	<div id="canvas-pie">
                 <p>Homicides by race</p>
                 <canvas id="ethnicity" width="250px" height="250px"></canvas>
                 <div id="dot-legend">
@@ -98,14 +117,17 @@
                     <div id="legend-hispanic"></div> Hispanic</br>
                     <div id="legend-white"></div> White</br>
                 </div>
+                </div>
             </div>
 
-            <div class="large-4 medium-4 small-4 columns" id="canvas-holder">
+            <div class="large-4 medium-4 small-4 columns">
+            	<div id="canvas-pie">
                 <p>Homicides by sex</p>
                 <canvas id="sex" width="250px" height="250px"></canvas>
                 <div id="dot-legend">
                     <div id="legend-male"></div> Male<br>
                     <div id="legend-female"></div> Female</br>
+                </div>
                 </div>
             </div>
         </div>
