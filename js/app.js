@@ -71,32 +71,35 @@ var pieDataSex = [
     }
 ];
 
-window.onload = function(){
+window.onload = function() {
 	var ctx1 = document.getElementById("ethnicity").getContext("2d");
 	window.ethnicity = new Chart(ctx1).Pie(pieDataEthnicity, {
-	  animationSteps: 1,
-      responsive: true
 	}); 
 
 	var ctx2 = document.getElementById("cause").getContext("2d");
 	window.cause = new Chart(ctx2).Pie(pieDataCause, {
-	  animationSteps: 1,
-      responsive: true
 	});
 
 	var ctx3 = document.getElementById("sex").getContext("2d");
 	window.sex = new Chart(ctx3).Pie(pieDataSex, {
-	  animationSteps: 1,
-      responsive: true
 	});
 
     var ctx4 = document.getElementById("brennan").getContext("2d");
     window.brennan = new Chart(ctx4).Bar(barDataBrennan, {
-      animationSteps: 1,
-      responsive: true,
       scaleShowVerticalLines: false
     }); 
+
+    var ctx5 = document.getElementById("fbi").getContext("2d");
+    window.fbi = new Chart(ctx5).Line(lineDataFBI, {
+      bezierCurve: false,
+      pointDotRadius: 3,
+      pointHitDetectionRadius : 10
+    });
 };
+
+Chart.defaults.global.tooltipCornerRadius = 0;
+Chart.defaults.global.animation = false;
+Chart.defaults.global.responsive = true;
 
 // Chart.js bar charts
 var barDataBrennan = {
@@ -108,7 +111,24 @@ var barDataBrennan = {
             strokeColor: "rgba(0,0,0,0.3)",
             highlightFill: "rgba(0,0,0,0.6)",
             highlightStroke: "rgba(0,0,0,0.7)",
-            data: [4.2, 7.4, 17.4, 14, 16.2, 7.3, 8.2, 1.9, 9.9, 2.7, 4.7, 12, 6.4, 8.5, 40.3, 4.1, 8.1, 18.9, 26.1, 6.1, 55.1, 11.2, 3.2, 8.2, 12.4, 10.1]
+            data: [4.2, 7.4, 17.4, 14, 16.2, 7.3, 8.2, 1.9, 9.9, 2.7, 4.7, 12, 6.4, 8.5, 40.3, 4.1, 7.6, 18.9, 26.1, 6.1, 55.1, 11.2, 3.2, 8.2, 12.4, 10.1]
+        }
+    ]
+};
+
+// Chart.js line charts
+var lineDataFBI = {
+    labels: ["1985", "1986", "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", ""],
+    datasets: [
+        {
+            label: "Denver Homicides 1985-2015",
+            fillColor: "rgba(0,0,0,0.2)",
+            strokeColor: "rgba(0,0,0,0.3)",
+            pointColor: "rgba(0,0,0,0.6)",
+            pointStrokeColor: "rgba(0,0,0,0.3",
+            pointHighlightFill: "rgba(0,0,0,1.0",
+            pointHighlightStroke: "rgba(0,0,0,1.0)",
+            data: [72, 91, 79, 69, 55, 67, 88, 95, 74, 81, 81, 64, 69, 51, 63, 32, 45, 51, 63, 87, 59, 51, 47, 40, 35, 28, 34, 39, 40, 31, 50]
         }
     ]
 };
