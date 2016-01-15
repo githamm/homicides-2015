@@ -110,10 +110,10 @@ p.popup {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 13px;
 }
-.top-bar {
+/* .top-bar {
     background-color: rgba(254, 252, 255, 1.0);
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-}
+} */
 
 table.simple {
     border-collapse: collapse;
@@ -257,6 +257,73 @@ img.image-sidebar {
     background-color: rgba(0,0,0,0.1);
     display: inline-block;
 }
+#calendar-legend {
+    margin-top: -5px;
+}
+#legend-homicide-1 { 
+    width: 12px; 
+    height: 12px; 
+    background-color: rgba(255,0,0,0.3); 
+    /* border: 1px solid rgba(0,0,0,0.7); */
+    display: inline-block;
+    margin-left: 15px;
+}
+#legend-homicide-2 { 
+    width: 12px; 
+    height: 12px; 
+    background-color: rgba(255,0,0,1.0); 
+    /* border: 1px solid rgba(0,0,0,0.7); */
+    display: inline-block;
+    margin-left: 15px;
+}
+#legend-police { 
+    width: 12px; 
+    height: 12px; 
+    background-color: rgba(0,0,160,0.3); 
+    /* border: 1px solid rgba(0,0,0,0.7); */
+    display: inline-block;
+    margin-left: 15px;
+}
+#legend-map-gunshot { 
+    width: 12px; 
+    height: 12px; 
+    background-color: red; 
+    /* border: 1px solid rgba(0,0,0,0.7); */
+    display: inline-block;
+    margin-left: 15px;
+}
+#legend-map-stabbing { 
+    width: 12px; 
+    height: 12px; 
+    background-color: blue; 
+    /* border: 1px solid rgba(0,0,0,0.7); */
+    display: inline-block;
+    margin-left: 15px;
+}
+#legend-map-blunt { 
+    width: 12px; 
+    height: 12px; 
+    background-color: green; 
+    /* border: 1px solid rgba(0,0,0,0.7); */
+    display: inline-block;
+    margin-left: 15px;
+}
+#legend-map-pending { 
+    width: 12px; 
+    height: 12px; 
+    background-color: black; 
+    /* border: 1px solid rgba(0,0,0,0.7); */
+    display: inline-block;
+    margin-left: 15px;
+}
+#legend-map-drowning { 
+    width: 12px; 
+    height: 12px; 
+    background-color: brown; 
+    /* border: 1px solid rgba(0,0,0,0.7); */
+    display: inline-block;
+    margin-left: 15px;
+}
 canvas {
     margin-top: 20px;
 }
@@ -270,6 +337,7 @@ canvas {
 #map {
     height: 500px;
     width: 100%;
+    margin-bottom: 25px;
 }
 .icon-manufacturing {
     width: 12px;
@@ -328,11 +396,13 @@ canvas {
 }
 @media screen and (max-width: 475px) {
     #bar-chart {
-        visibility: hidden;
+        /* visibility: hidden; */
+        display: none;
     }
 }
 @media screen and (min-width: 475px) {
     #bar-chart-note {
-        visibility: hidden;
+        /* visibility: hidden; */
+        display: none;
     }
 }
