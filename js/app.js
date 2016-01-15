@@ -31,16 +31,16 @@ var pieDataCause = [
         label: "Gunshot"
     },
     {
-        value: 4,
-        color: "rgba(0,0,0,0.7)",
-        highlight: "rgba(114,143,206,1.0)",
-        label: "Pending"
-    },
-    {
         value: 6,
         color: "rgba(0,0,0,0.5)",
         highlight: "rgba(114,143,206,1.0)",
         label: "Stabbing/sharp force injury"
+    },
+    {
+        value: 4,
+        color: "rgba(0,0,0,0.7)",
+        highlight: "rgba(114,143,206,1.0)",
+        label: "Pending"
     },
     {
         value: 2,

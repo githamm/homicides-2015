@@ -169,31 +169,38 @@
         <div class="large-10 large-centered medium-12 medium-centered small-12 columns">
             <div class="large-4 medium-4 small-4 columns">
                 <div id="canvas-pie">
-                <p>Homicides by cause</p>
-                <canvas id="cause" width="250px" height="250px"></canvas>
+	                <p>Homicides by cause</p>
+	                <canvas id="cause" width="250px" height="250px"></canvas>
+	                <div id="dot-legend">
+	                    <div id="legend-gunshot"></div> Gunshot<br>
+	                    <div id="legend-stabbing"></div> Stabbing,<br>sharp force injury<br>
+	                    <div id="legend-pending"></div> Pending<br>
+	                    <div id="legend-blunt-force"></div> Blunt force injury<br>
+	                    <div id="legend-drowning"></div> Drowning<br>
+	                </div>
                 </div>
             </div>
 
             <div class="large-4 medium-4 small-4 columns">
             	<div id="canvas-pie">
                 <p>Homicides by race</p>
-                <canvas id="ethnicity" width="250px" height="250px"></canvas>
-                <div id="dot-legend">
-                    <div id="legend-black"></div> Black<br>
-                    <div id="legend-hispanic"></div> Hispanic</br>
-                    <div id="legend-white"></div> White</br>
-                </div>
+	                <canvas id="ethnicity" width="250px" height="250px"></canvas>
+	                <div id="dot-legend">
+	                    <div id="legend-black"></div> Black<br>
+	                    <div id="legend-hispanic"></div> Hispanic</br>
+	                    <div id="legend-white"></div> White</br>
+	                </div>
                 </div>
             </div>
 
             <div class="large-4 medium-4 small-4 columns">
             	<div id="canvas-pie">
-                <p>Homicides by sex</p>
-                <canvas id="sex" width="250px" height="250px"></canvas>
-                <div id="dot-legend">
-                    <div id="legend-male"></div> Male<br>
-                    <div id="legend-female"></div> Female</br>
-                </div>
+	                <p>Homicides by sex</p>
+	                <canvas id="sex" width="250px" height="250px"></canvas>
+	                <div id="dot-legend">
+	                    <div id="legend-male"></div> Male<br>
+	                    <div id="legend-female"></div> Female</br>
+	                </div>
                 </div>
             </div>
         </div>
@@ -203,8 +210,9 @@
     	<div class="large-9 large-centered columns">
     		<p>Phasellus non auctor lectus, eu rhoncus sapien. Duis eu metus vitae turpis eleifend vestibulum ut et nibh. In id massa tellus. In congue laoreet molestie. Nulla sed enim leo. Donec nisl lacus, tempor non elementum in, dignissim vitae quam. Suspendisse leo felis, tempus a tristique et, ornare quis nulla. Curabitur tempus pulvinar tortor. Cras a ex libero. Donec vel nisi molestie, rhoncus dolor et, dignissim quam. Morbi dignissim mi a lorem pretium, vel interdum tellus dictum.</p>
     		
-    		<table id="colorado-per-capita" class="simple" style="width: 65%; margin-left: 25px;">
-    			<h3>Table title</h3>
+    		<div style="float: right;">
+    		<p class="table-title">Colorado homicide rates</p>
+    		<table id="colorado-per-capita" class="simple">
 		    	<tr>
 		    		<th class="city"></th><th class="year">2014</th><th class="year">2013</th><th class="year">2012</th><th class="year">2011</th><th class="year">2010</th>
 		    	</tr>
@@ -235,8 +243,9 @@
 		    	<tr>
 		    		<td>Pueblo</td><td>9.2</td><td>1.9</td><td>7.3</td><td>11.1</td><td>1.0</td>
 		    	</tr>
-		    	<p class="chart-note">Cities are ordered based on 2014 population</p>
 	    	</table>
+		    	<p class="chart-note">Rates are per 100,000 population; cities are ordered based on 2014 population.</p>
+	    	</div>
 
 	    	<p>Phasellus non auctor lectus, eu rhoncus sapien. Duis eu metus vitae turpis eleifend vestibulum ut et nibh. In id massa tellus. In congue laoreet molestie. Nulla sed enim leo. Donec nisl lacus, tempor non elementum in, dignissim vitae quam. Suspendisse leo felis, tempus a tristique et, ornare quis nulla. Curabitur tempus pulvinar tortor. Cras a ex libero. Donec vel nisi molestie, rhoncus dolor et, dignissim quam. Morbi dignissim mi a lorem pretium, vel interdum tellus dictum.</p>
 		</div>

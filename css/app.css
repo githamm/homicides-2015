@@ -99,6 +99,13 @@ p.phone-note {
     line-height: 20px;
     margin: 0px 20px 0px 20px;
 }
+p.table-title {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
 .top-bar {
     background-color: rgba(254, 252, 255, 1.0);
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
@@ -107,8 +114,8 @@ p.phone-note {
 table.simple {
     border-collapse: collapse;
     border: none;
+    margin-left: 25px;
     width: 100%;
-    float: right;
 }
 .simple tbody {
     border: none;
@@ -183,8 +190,7 @@ img.image-sidebar {
 	margin-bottom: 15px;
 }
 #dot-legend {
-    margin-top: -15px;
-    float: right;
+    margin-top: -5px;
 }
 #legend-black { 
     width: 12px; 
@@ -215,6 +221,36 @@ img.image-sidebar {
     width: 12px; 
     height: 12px; 
     background-color: rgba(0,0,0,0.5);
+    display: inline-block;
+}
+#legend-gunshot { 
+    width: 12px; 
+    height: 12px; 
+    background-color: rgba(0,0,0,0.9);
+    display: inline-block;
+}
+#legend-stabbing { 
+    width: 12px; 
+    height: 12px; 
+    background-color: rgba(0,0,0,0.7);
+    display: inline-block;
+}
+#legend-pending { 
+    width: 12px; 
+    height: 12px; 
+    background-color: rgba(0,0,0,0.5);
+    display: inline-block;
+}
+#legend-blunt-force { 
+    width: 12px; 
+    height: 12px; 
+    background-color: rgba(0,0,0,0.3);
+    display: inline-block;
+}
+#legend-drowning { 
+    width: 12px; 
+    height: 12px; 
+    background-color: rgba(0,0,0,0.1);
     display: inline-block;
 }
 canvas {
