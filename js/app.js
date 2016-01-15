@@ -132,3 +132,130 @@ var lineDataFBI = {
         }
     ]
 };
+
+// Leaflet map
+var map = L.map('map', {
+            center: [39.72, -104.94],
+            zoom: 12
+});
+
+var pendingIcon = L.divIcon({
+                className: 'icon-pending',
+                iconSize: [12, 12]
+});
+
+var sharpIcon = L.divIcon({
+                className: 'icon-sharp',
+                iconSize: [12, 12]
+});
+
+var gunshotIcon = L.divIcon({
+                className: 'icon-gunshot',
+                iconSize: [12, 12]
+});
+
+var bluntIcon = L.divIcon({
+                className: 'icon-blunt',
+                iconSize: [12, 12]
+});
+
+var drowningIcon = L.divIcon({
+                className: 'icon-drowning',
+                iconSize: [12, 12]
+});
+
+L.tileLayer('http://{s}.{base}.maps.cit.api.here.com/maptile/2.1/{type}/{mapID}/reduced.day/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}', {
+    attribution: 'Map &copy; 1987-2014 <a href="http://developer.here.com">HERE</a>',
+    subdomains: '1234',
+    mapID: 'newest',
+    app_id: '2K8wqfYF2CuD5D67HdQx',
+    app_code: '5PforzMWCWQoYPBUP-0p_A',
+    base: 'base',
+    maxZoom: 20,
+    type: 'maptile',
+    language: 'eng',
+    format: 'png8',
+    size: '256'
+}).addTo(map);
+
+$.getJSON("js/homicide-geojson.js",function(data){
+    var mapIcon = L.divIcon({
+        className: 'icon-manufacturing',
+        iconSize: [9, 9]
+    });
+
+var pending = L.geoJson(data, {
+    filter: function(feature, layer) {
+        return feature.properties.causeSummary == "Pending";
+    },
+    pointToLayer: function(feature, latlng) {
+        return L.marker(latlng, {
+            icon: pendingIcon
+        })
+    }
+});
+
+var sharp = L.geoJson(data, {
+    filter: function(feature, layer) {
+        return (Array("Sharp force injury","Stab wound").indexOf(feature.properties.causeSummary) >= 0);
+    },
+    pointToLayer: function(feature, latlng) {
+        return L.marker(latlng, {
+            icon: sharpIcon
+        })
+    }
+});
+
+var gunshot = L.geoJson(data, {
+    filter: function(feature, layer) {
+        return feature.properties.causeSummary == "Gunshot";
+    },
+    pointToLayer: function(feature, latlng) {
+        return L.marker(latlng, {
+            icon: gunshotIcon
+        })
+    }
+});
+
+var blunt = L.geoJson(data, {
+    filter: function(feature, layer) {
+        return feature.properties.causeSummary == "Blunt force";
+    },
+    pointToLayer: function(feature, latlng) {
+        return L.marker(latlng, {
+            icon: bluntIcon
+        })
+    }
+});
+
+var drowning = L.geoJson(data, {
+    filter: function(feature, layer) {
+        return feature.properties.causeSummary == "Drowning";
+    },
+    pointToLayer: function(feature, latlng) {
+        return L.marker(latlng, {
+            icon: drowningIcon
+        })
+    }
+});
+
+pending.addTo(map);
+sharp.addTo(map);
+gunshot.addTo(map);
+blunt.addTo(map);
+drowning.addTo(map);
+
+    L.geoJson(data,{
+        pointToLayer: function(feature,latlng){
+            var marker = L.marker(latlng,{
+              icon: mapIcon
+            });
+            marker.bindPopup(
+            	'<strong>' + feature.properties.nameOfDeceased + '</strong><br>'
+            	+ '<hr style="margin-top: 3px; margin-bottom: 7px;">'
+            	+ 'Died on ' + feature.properties.dateOfHomicide + ' near ' + feature.properties.addressOfHomicide + ' in the ' + feature.properties.Neighborhood + ' neighborhood.<br style="margin-bottom: 15px;">'
+            	+ '<span style="font-weight: bold;">Cause of death:</strong> ' + feature.properties.causeOfDeath);
+            return marker;
+        }
+    }).addTo(map);
+});
