@@ -31,28 +31,28 @@ var pieDataCause = [
         label: "Gunshot"
     },
     {
-        value: 5,
+        value: 4,
         color: "rgba(0,0,0,0.7)",
         highlight: "rgba(114,143,206,1.0)",
         label: "Pending"
     },
     {
-        value: 4,
+        value: 6,
         color: "rgba(0,0,0,0.5)",
         highlight: "rgba(114,143,206,1.0)",
-        label: "Sharp force injury"
+        label: "Stabbing/sharp force injury"
     },
     {
         value: 2,
         color: "rgba(0,0,0,0.3)",
         highlight: "rgba(114,143,206,1.0)",
-        label: "Stab wound"
+        label: "Blunt force injury"
     },
     {
-        value: 2,
+        value: 1,
         color: "rgba(0,0,0,0.1)",
         highlight: "rgba(114,143,206,1.0)",
-        label: "Blunt force"
+        label: "Drowning"
     }
 ];
 
@@ -118,7 +118,7 @@ var barDataBrennan = {
 
 // Chart.js line charts
 var lineDataFBI = {
-    labels: ["1985", "1986", "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", ""],
+    labels: ["1985", "1986", "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"],
     datasets: [
         {
             label: "Denver Homicides 1985-2015",

@@ -4,7 +4,7 @@ body {
 }
 .sidebar {
     float: right;
-    width: 40%;
+    width: 30%;
     border-left: 2px solid rgba(0, 0, 0, 0.1);
     padding-left: 25px;
     margin-top: 50px;
@@ -69,6 +69,12 @@ p.sidebar-text {
 	font-size: 18px;
 	line-height: 24px;
 }
+p.victim-text {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    line-height: 24px;
+    font-style: italic;
+}
 p.image-topper {
 	font-family: Georgia, serif;
 	font-size: 14px;
@@ -97,16 +103,53 @@ p.phone-note {
     background-color: rgba(254, 252, 255, 1.0);
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
+
+table.simple {
+    border-collapse: collapse;
+    border: none;
+    width: 100%;
+    float: right;
+}
+.simple tbody {
+    border: none;
+}
+.simple th.city {
+    width: 25%;
+}
+.simple th.year {
+    width: 15%;
+}
+.simple th {
+    border: none;
+    border-bottom: 2px black solid;
+    text-align: left;
+    font-family: Georgia, serif;
+    font-size: 16px;
+}
+.simple td {
+    border: none;
+    text-align: left;
+    font-family: Georgia, serif;
+    font-size: 16px;
+}
+.simple tr {
+    border-bottom: 1px rgba(0,0,0,0.1) solid;
+}
+.simple tr:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+
 table.homicide {
-		float: left;
-  width: 22.5%;
-		margin: 6px;
+    float: left;
+    width: 22.5%;
+	margin: 6px;
 	}
-	thead, tbody, tfoot {
-		border: 1px solid rgba(0,0,0,0.1);
-		background-color: rgba(254, 252, 255, 1.0);
-	}
-	th {
+thead, tbody, tfoot {
+	border: 1px solid rgba(0,0,0,0.1);
+	background-color: rgba(254, 252, 255, 1.0);
+}
+th {
   font-size: 14px;
 }
 td {
