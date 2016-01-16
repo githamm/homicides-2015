@@ -53,6 +53,12 @@ p.byline {
     font-weight: bold;
     text-align: center;
 }
+p.sub-byline {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+}
 p.cutline {
 	font-family: Georgia, serif;
 	font-size: 15px;
@@ -122,6 +128,11 @@ p.popup {
     background-color: rgba(254, 252, 255, 1.0);
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 } */
+
+.image-container {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
 
 table.simple {
     border-collapse: collapse;
@@ -409,7 +420,7 @@ canvas {
 
 } */
 .opener {
-    background-image: url('/img/eastside_PUL_015.jpg');
+    background-image: url('../img/eastside_PUL_015.jpg');
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;

@@ -11,13 +11,23 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 
-    <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
-    <script src="http://extras.denverpost.com/frameworks/charts/chart.js"></script>
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-    <script src="js/leaflet-grouped-layer-control.js"></script>
-    </script>
+
+<style>
+.slick-prev:before, .slick-next:before{
+    color:red;
+}
+      .slider-div {
+          height: 100%;
+      }
+      img {
+      	height: 100%;
+      	width: 100%;
+      }
+</style>    
 
 </head>
 
@@ -93,15 +103,20 @@
 
     <div class="row">
         <div class="large-10 large-centered columns">
-            <h1 class="main-hed">Cras ante diam, cursus et nulla ac, euismod euismod tellus</h1>
-            <h2 class="sub-hed">Nullam nisi nulla, dictum vitae lectus a, consectetur convallis augue</h2>
+            <h1 class="main-hed">A headline will go here and here and here and here</h1>
+            <h2 class="sub-hed">A subhead will go here and here and here and here</h2>
         </div>
     </div>
 
     <div class="row">
         <div class="large-9 large-centered columns">
+            <div class="large-4 large-centered">
             <p class="byline">By Noelle Phillips &bull; Jan. 17, 2016</p>
-            <p>On Jan. 4, 2015, Daerius Churchill walked along Bruce Randolph Avenue on his way to a recording studio to make music with friends when someone began shooting from a passing car. Churchill collapsed on the sidewalk. He died less than an hour later at a hospital, becoming the first homicide in Denver in 2015.</p>
+            <hr style="margin-top: -12px; margin-bottom: 1px;" />
+            <p class="sub-byline">The Denver Post</p>
+            </div>
+            <p>On Jan. 4, 2015, Daerius Churchill walked along Bruce Randolph Avenue on his way to a recording studio to make music with friends when someone began shooting from a passing car.</p>
+            <p>Churchill collapsed on the sidewalk. He died less than an hour later at a hospital, becoming the first homicide in Denver in 2015.</p>
             <p>By year’s end, 50 people would be killed on Denver’s streets, making it the most violent since since 2006.</p>
 
             <!-- VICTIM LIST -->
@@ -173,7 +188,7 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row image-container">
     	<div class="large-12 columns">
             <img src="img/eastside_PUL_003.jpg">
             <p class="cutline">Jamonie White watches as her aunt, Tina Ware, left, and cousin, Jalayah Reeves, right, comfort Ty-Janae White, Nolan Ware's little sister. Nolan Ware, 22, was shot and killed April 25, 2015. <em>Joe Amon, The Denver Post</em>
@@ -213,11 +228,38 @@
         </div>
     </div>
 
+    <!-- PHOTO GALLERY 
+	<div class="row photo-container">
+		<div class="large-12 columns">
+			<div class="single-item">
+				<div><img src="img/eastside_PUL_001.jpg"></div>
+				<div><img src="img/eastside_PUL_002.jpg"></div>
+  			</div>
+		</div>
+	</div> -->
+	<div class="row image-container">
+		<div class="large-12 columns">
+			<div class="single-item">
+    			<div class="slider-div">
+    				<img src="img/eastside_PUL_001.jpg">
+    				<p class="cutline">Last year, homicides rose around the country with 14 of the country’s 30 largest cities on track to show increases. <em>Photo credit</em></p>
+    			</div>
+				<div class="slider-div">
+				    <img src="img/eastside_PUL_002.jpg">
+				</div>
+				<div class="slider-div">
+				    <img src="img/eastside_PUL_003.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
     <div class="row">
         <div class="large-9 large-centered columns">
             <p>Last year, homicides rose around the country with 14 of the country’s 30 largest cities on track to show increases, according to the Brennan Center for Justice’s report, “Crime in 2015: A Preliminary Analysis.”</p>
-            <p>However, the report indicated Denver had one of the highest jumps of any city it studied, although its crime ranked below the national average of 10.1 murders per 100,000 residents..
-            Denver had a murder rate of 7.6 per 100,000 residents. In comparison, Seattle’s projected murder rate was 4.1 and Memphis’ was 18.9, according to the report. Detroit, Washington D.C. and Louisville, Ky., also had higher rates.</p>
+            <p>However, the report indicated Denver had one of the highest jumps of any city it studied, although its crime ranked below the national average of 10.1 murders per 100,000 residents.</p>
+            <p>Denver had a murder rate of 7.6 per 100,000 residents. In comparison, Seattle’s projected murder rate was 4.1 and Memphis’ was 18.9, according to the report. Detroit, Washington D.C. and Louisville, Ky., also had higher rates.</p>
         </div>
     </div>
 
@@ -299,7 +341,7 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row image-container">
     	<div class="large-12 columns">
     		<img src="img/eastside_PUL_017.jpg">
     		<p class="cutline">Rev. King H. Harris ministers to Hollins Washington, 23, in front of a home near 35th Avenue and High Street in the Cole neighborhood July 31, 2015. A coalition took to the streets in a series of prayer walks in areas affected by gang violence. <em>Joe Amon, The Denver Post</em></p>
@@ -1140,10 +1182,20 @@
             <div id="map"></div>
         </div>
 
+    <!-- SCRIPTS -->
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.js"></script> -->
     <script src="js/vendor/jquery.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="http://extras.denverpost.com/frameworks/charts/chart.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="js/leaflet-grouped-layer-control.js"></script>
+    </script>
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js//slick.min.js"></script>
+
 </body>
 
 </html>

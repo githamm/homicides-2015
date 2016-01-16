@@ -1,4 +1,20 @@
+// Foundation
 $(document).foundation();
+
+// Slick.js
+$(document).ready(function() {
+  $('.single-item').slick({
+    centerMode: false,
+    centerPadding: '0px',
+    dots: true,
+    /* Just changed this to get the bottom dots navigation 
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1, */
+    arrows: true
+  });
+});
 
 // Chart.js pie charts
 
