@@ -82,6 +82,15 @@
     </div> -->
 
 
+    <div class="opener">
+	<div id="title">
+		<h2 class="heading">Denver Homicides 2015</h2>
+	</div>
+</div>
+<div class="large-11 medium-11 columns">
+	<p style="text-align: right; margin-top: -10px; font-style: italic;" class="cutline">Joe Amon, The Denver Post</p>
+</div>
+
     <div class="row">
         <div class="large-10 large-centered columns">
             <h1 class="main-hed">Cras ante diam, cursus et nulla ac, euismod euismod tellus</h1>
@@ -92,7 +101,7 @@
     <div class="row">
         <div class="large-9 large-centered columns">
             <p class="byline">By Noelle Phillips &bull; Jan. 17, 2016</p>
-            <p>On Jan. 4, 2015, Daerius Churchill walked along Bruce Randolph Avenue on his way to a recording studio to make music with friends when someone began shooting from a passing car.Churchill collapsed on the sidewalk. He died less than an hour later at a hospital, becoming the first homicide in Denver in 2015.</p>
+            <p>On Jan. 4, 2015, Daerius Churchill walked along Bruce Randolph Avenue on his way to a recording studio to make music with friends when someone began shooting from a passing car. Churchill collapsed on the sidewalk. He died less than an hour later at a hospital, becoming the first homicide in Denver in 2015.</p>
             <p>By year’s end, 50 people would be killed on Denver’s streets, making it the most violent since since 2006.</p>
 
             <!-- VICTIM LIST -->
@@ -161,21 +170,41 @@
             <p>The killings took a toll on the families of those who were lost and raised concerns about public safety, especially in Northeast Denver where the most violence occurred.</p>
             <p>“It’s just really heartbreaking when you have to bury your son,” said Therell Churchill, Daerius Churchill’s mother. “That’s every parent’s worst nightmare and mine has become a reality.”</p>
             <p>No one has been arrested in the 22-year-old Churchill’s death. Or Katchen’s. Or Jacskon’s.</p>
+        </div>
+    </div>
+
+    <div class="row">
+    	<div class="large-12 columns">
+            <img src="img/eastside_PUL_003.jpg">
+            <p class="cutline">Jamonie White watches as her aunt, Tina Ware, left, and cousin, Jalayah Reeves, right, comfort Ty-Janae White, Nolan Ware's little sister. Nolan Ware, 22, was shot and killed April 25, 2015. <em>Joe Amon, The Denver Post</em>
+        </div>
+    </div>
+
+    <div class="row">
+    	<div class="large-9 large-centered columns">
             <p>Of the 50 homicides, arrests have been made in 28 cases, a 56 percent closure rate, said Sonny Jackson, a police department spokesman. The closure rate drops when looking at the gang-related killings with suspects charged in only 40 percent of those cases.</p>
             <p>Chief Robert White expects his department to close out more cases in the next few months. Investigating cases and preparing them for the district attorney’s office are time consuming, he said.</p>
             <p>“When we talk about gang murders those are the most difficult to solve,” White said.</p>
 
             <!-- LINE CHART -->
             <!-- <div class="row" id="line-chart"> -->
-            <div class="large-8 medium-12 medium-centered small-12 columns float-right" id="line-chart">
+            <div class="large-8 medium-8 columns float-right" id="line-chart">
                 <div id="canvas-line">
-                <p class="graphic-hed">Denver homicides 1985-2015</p>
-                <p class="graphic-intro-inset">The chart shows the number of homicides in Denver from 1985 to 2015 as reported in the Federal Bureau of Investigation Uniform Crime Reports' "Murder and non-negligent manslaughter" category.</p>
-                <canvas id="fbi"></canvas>
-                <p class="source">Source: <a href="https://www.fbi.gov/about-us/cjis/ucr">Federal Bureau of Investigation</a></p>
-            </div>
-        </div>
-    <!-- </div> -->
+	                <p class="graphic-hed">Denver homicides 1985-2015</p>
+	                <p class="graphic-intro-inset">The chart shows the number of homicides in Denver from 1985 to 2015 as reported in the Federal Bureau of Investigation Uniform Crime Reports&rsquo; &ldquo;Murder and non-negligent manslaughter&rdquo; category.</p>
+
+	                <div class="hide-note">
+	    				<p class="phone-note">Please turn your device sideways to see this chart</p>
+	    			</div>
+
+	                <div class="hide-chart">
+	                	<canvas id="fbi"></canvas>
+	                	<p class="source">Source: <a href="https://www.fbi.gov/about-us/cjis/ucr">Federal Bureau of Investigation</a></p>
+	            	</div>
+            	</div>
+        	</div>
+    	<!-- </div> -->
+
             <p>While 2015 turned out to be one of the most violent years in nearly a decade, it was not Denver’s worst year. Nor is the city among the United States’ most dangerous.</p>
             <p>Across the nation, murder rates spiked in the 1990s and then tapered off in the mid-2000s. Denver has followed that pattern.</p>
             <p>In Denver, people still talk about 1993’s notorious “summer of violence,” a year when 74 people were killed. That was the year gang violence captured the city’s attention.</p>
@@ -195,12 +224,19 @@
     <!-- BAR CHART -->
     <div class="row" id="bar-chart">
         <div class="large-10 large-centered medium-12 medium-centered small-12 columns">
-          <div id="canvas-bar">
-            <p class="graphic-hed">Homicide rates in the United States</p><hr />
-            <p class="graphic-intro">The chart shows 2015 homicide rates* for the 30 largest cities in the United States. Cities are ordered by population size; rates are per 100,000 people.
-                <canvas id="brennan"></canvas>
-                <p class="source">Source: <a href="https://www.brennancenter.org/publication/crime-2015-preliminary-analysis">Brennan Center for Justice</a></p>
-                <p class="chart-note">* Per the report, all rates are projections based on data available as of Dec. 23, 2015; data was unavailable for: San Francisco, Calif.; Indianapolis, Ind.; Columbus, Ohio; El Paso, Tex.; and Nashville, Tenn. For Denver, we used 50 homicides, as reported by the Denver Police Department, to calculate the rate. 
+          	<div id="canvas-bar">
+            	<p class="graphic-hed">Homicide rates in the United States</p>
+            	<p class="graphic-intro">The chart shows 2015 homicide rates* for the 30 largest cities in the United States. Cities are ordered by population size; rates are per 100,000 people.</p>
+
+            	<div class="hide-note">
+    				<p class="phone-note">Please turn your device sideways to see this chart</p>
+    			</div>
+
+    			<div class="hide-chart">
+                	<canvas id="brennan"></canvas>
+                	<p class="source">Source: <a href="https://www.brennancenter.org/publication/crime-2015-preliminary-analysis">Brennan Center for Justice</a></p>
+                	<p class="chart-note">* Per the report, all rates are projections based on data available as of Dec. 23, 2015; data was unavailable for: San Francisco, Calif.; Indianapolis, Ind.; Columbus, Ohio; El Paso, Tex.; and Nashville, Tenn. For Denver, we used 50 homicides, as reported by the Denver Police Department, to calculate the rate.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -215,11 +251,9 @@
         <div class="large-9 large-centered columns">
             <p>While Denver is not as violent as other major U.S. cities and while its murder rates have been trending downward, White said he is concerned.</p>
             <p>“It’s not a number to me,” he said. “It’s not a number to any of them. We realize the impact it has on a family’s life.”</p>
-            <p>A one-year jump should be concerning for any city, but it’s impossible to know if it is an indication of coming crime wave, said Darrel Stephens, executive director of the Major Cities Chiefs Association, which has 76 members.</p>
-            <p>“When you have that many cities that are having increases in homicides and violent crime it seems like it’s more than a coincidence,” Stephens said. “We’re wondering if this is the beginning of a trend but we just don’t know.”</p>
 
             <!-- TABLE -->
-            <div class="large-7 columns float-right" id="table-colo-rates">
+            <div class="large-7 medium-6 columns float-right" id="table-colo-rates">
                 <p class="table-title">Colorado homicide rates</p>
                 <table id="colorado-per-capita" class="simple">
                   <tr>
@@ -254,11 +288,26 @@
                   </tr>
                 </table>
                 <p class="source">Source: <a href="https://www.fbi.gov/about-us/cjis/ucr">Federal Bureau of Investigation</a></p>
-                <p class="chart-note">Rates are per 100,000 population; cities are ordered based on 2014 population.</p>
+                <p class="chart-note">Rates are per 100,000 people; cities are ordered based on 2014 population.</p>
             </div>
 
+            
+            <p>A one-year jump should be concerning for any city, but it’s impossible to know if it is an indication of coming crime wave, said Darrel Stephens, executive director of the Major Cities Chiefs Association, which has 76 members.</p>
+            <p>“When you have that many cities that are having increases in homicides and violent crime it seems like it’s more than a coincidence,” Stephens said. “We’re wondering if this is the beginning of a trend but we just don’t know.”</p>
             <p>Chiefs, mayors and prosecutors from 41 cities met in October to discuss the issue. Some cities, like Denver, pointed to gang violence. Others blamed a resurgence in drug trafficking, particularly heroin.</p>
             <p>Gang violence is a long-standing problem in the United States, and it is unacceptable in any city, Stephens said.</p>
+        </div>
+    </div>
+
+    <div class="row">
+    	<div class="large-12 columns">
+    		<img src="img/eastside_PUL_017.jpg">
+    		<p class="cutline">Rev. King H. Harris ministers to Hollins Washington, 23, in front of a home near 35th Avenue and High Street in the Cole neighborhood July 31, 2015. A coalition took to the streets in a series of prayer walks in areas affected by gang violence. <em>Joe Amon, The Denver Post</em></p>
+    	</div>
+    </div>
+
+    <div class="row">
+    	<div class="large-9 large-centered columns">
             <p>In Denver, the gang violence captured officials attention after a particularly violent weekend in March when four people were killed in a 24-hour period.</p>
             <p>Three were related to gangs, including the deaths of De.Anthony Williams, 31, and Tyrael Adams, 29, who were gunned down in the parking lot of a Lowry apartment complex as police were on the eighth floor of a building clearing out a loud party.</p>
             <p>Jeffrey Starks, 28, also was killed that weekend.</p>
@@ -268,8 +317,8 @@
 
     <!-- CALENDAR GRAPHIC -->
     <div class="row">
-      <div class="large-10 large-centered columns">
-        <p class="graphic-hed">When they were killed</p><hr />
+      <div class="large-10 large-centered medium-12 columns">
+        <p class="graphic-hed" style="margin-top: 25px;">When they were killed</p>
             <p class="graphic-intro" style="margin-bottom: 30px;">The chart shows the dates homicides occurred, as well as the dates when law enforcement officers shot and killed someone, which are not inlcluded in the 50 Denver homicides in 2015 (per Federal Bureau of Investigation methodology). <em>Hover over a date for details.</em></p>
             <div id="calendar-legend">
                 <div id="legend-homicide-1"></div> Single homicide
@@ -515,7 +564,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="large-10 large-centered columns">
+      <div class="large-10 large-centered medium-12 columns">
         <table class="homicide">
           <tr>
             <th colspan="7">May</th>
@@ -1036,21 +1085,6 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="large-12 columns">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Street_Scene_2%2C_Tehran_%2814471827341%29.jpg" />
-            <p class="cutline">Maecenas pulvinar, nunc sed suscipit imperdiet, orci diam egestas tortor, ac scelerisque dolor mi et purus. In non aliquam libero, euismod eleifend ipsum. Duis eget mollis quam. <em>By RJ Sangosti, The Denver Post</em></p>
-        </div>
-    </div>
-
-    
-
-    <div id="bar-chart-note">
-    	<p class="phone-note">Turn your device sideways to see a bar chart of 2015 homicide rates for the largest cities in the United States</p>
-    </div>
-
-    
-
     <div class="row" id="pie-charts">
         <div class="large-10 large-centered medium-12 medium-centered small-12 columns">
             <div class="large-4 medium-4 small-4 columns">
@@ -1091,53 +1125,6 @@
             </div>
         </div>
     </div>
-
-    <div class="row">
-    	<div class="large-9 large-centered columns">
-    		<p>Phasellus non auctor lectus, eu rhoncus sapien. Duis eu metus vitae turpis eleifend vestibulum ut et nibh. In id massa tellus. In congue laoreet molestie. Nulla sed enim leo. Donec nisl lacus, tempor non elementum in, dignissim vitae quam. Suspendisse leo felis, tempus a tristique et, ornare quis nulla. Curabitur tempus pulvinar tortor. Cras a ex libero. Donec vel nisi molestie, rhoncus dolor et, dignissim quam. Morbi dignissim mi a lorem pretium, vel interdum tellus dictum.</p>
-    		
-    		<div style="float: right;">
-    		<p class="table-title">Colorado homicide rates</p>
-    		<table id="colorado-per-capita" class="simple">
-		    	<tr>
-		    		<th class="city"></th><th class="year">2014</th><th class="year">2013</th><th class="year">2012</th><th class="year">2011</th><th class="year">2010</th>
-		    	</tr>
-		    	<tr>
-		    		<td>Denver</td><td>4.7</td><td>6.2</td><td>6.2</td><td>5.6</td><td>3.6</td>
-		    	</tr>
-		    	<tr>
-		    		<td>Colorado Springs</td><td>4.5</td><td>6.0</td><td>4.2</td><td>6.1</td><td>5.0</td>
-		    	</tr>
-		    	<tr>
-		    		<td>Aurora</td><td>3.1</td><td>6.7</td><td>8.6</td><td>2.7</td><td>7.1</td>
-		    	</tr>
-		    	<tr>
-		    		<td>Fort Collins</td><td>0.6</td><td>0</td><td>1.3</td><td>2.0</td><td>0</td>
-		    	</tr>
-		    	<tr>
-		    		<td>Lakewood</td><td>3.4</td><td>4.1</td><td>1.4</td><td>5.5</td><td>0.7</td>
-		    	</tr>
-		    	<tr>
-		    		<td>Thornton</td><td>4.6</td><td>4.0</td><td>0.8</td><td>0</td><td>4.2</td>
-		    	</tr>
-		    	<tr>
-		    		<td>Arvada</td><td>0.9</td><td>0</td><td>0</td><td>0.9</td><td>0.9</td>
-		    	</tr>
-		    	<tr>
-		    		<td>Westminster</td><td>3.6</td><td>1.8</td><td>1.8</td><td>3.7</td><td>0.9</td>
-		    	</tr>
-		    	<tr>
-		    		<td>Pueblo</td><td>9.2</td><td>1.9</td><td>7.3</td><td>11.1</td><td>1.0</td>
-		    	</tr>
-	    	</table>
-		    	<p class="chart-note">Rates are per 100,000 population; cities are ordered based on 2014 population.</p>
-	    	</div>
-
-	    	<p>Phasellus non auctor lectus, eu rhoncus sapien. Duis eu metus vitae turpis eleifend vestibulum ut et nibh. In id massa tellus. In congue laoreet molestie. Nulla sed enim leo. Donec nisl lacus, tempor non elementum in, dignissim vitae quam. Suspendisse leo felis, tempus a tristique et, ornare quis nulla. Curabitur tempus pulvinar tortor. Cras a ex libero. Donec vel nisi molestie, rhoncus dolor et, dignissim quam. Morbi dignissim mi a lorem pretium, vel interdum tellus dictum.</p>
-		</div>
-	</div>
-
-    
 
     <div class="row">
     	<div class="large-9 large-centered">

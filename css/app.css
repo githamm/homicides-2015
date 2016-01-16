@@ -35,15 +35,16 @@ p.graphic-hed {
 }
 p.graphic-intro {
     font-size: 18px;
-    line-height: 19px;
+    line-height: 20px;
 }
 p.graphic-intro-inset {
     font-size: 17px;
     line-height: 18px;
+    margin-bottom: 0px;
 }
 p {
     font-family: Georgia, serif;
-    font-size: 20px;
+    font-size: 22px;
     letter-spacing: .4px;
 }
 p.byline {
@@ -102,8 +103,8 @@ p.phone-note {
     font-style: italic;
     color: red;
     text-align: center;
-    line-height: 20px;
-    margin: 0px 20px 0px 20px;
+    line-height: 18px;
+    margin: 20px;
 }
 p.table-title {
     font-family: Georgia, serif;
@@ -334,9 +335,13 @@ img.image-sidebar {
 canvas {
     margin-top: 20px;
 }
+#canvas-line {
+    width: 100%;
+}
 #canvas-bar {
     width: 100%;
-    margin-top: 0px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 #canvas-pie {
     width: 90%;
@@ -393,8 +398,54 @@ canvas {
     border-left: 1px lightgray solid;
 }
 #table-colo-rates {
-    margin: 25px 0px 25px 35px;
+    margin: 25px 15px 25px 35px;
     border-left: 1px lightgray solid;
+}
+/* #cover-image {
+  background: url('/img/eastside_PUL_015.jpg') no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+
+} */
+.opener {
+    background-image: url('/img/eastside_PUL_015.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed; /* absolute */
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    z-index: -2;
+    margin-bottom:1em;
+}
+.opener div#title {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align:center;
+}
+.opener div#title h2 {
+    text-transform: uppercase;
+    position: absolute;
+    padding-top: 22px;
+    padding-left: 12px;
+    line-height: 42px;
+    color: #efeeec;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: -2px;
+    word-spacing: 8px;
 }
 @media screen and (max-width: 600px) {
     .sidebar {
@@ -410,14 +461,12 @@ canvas {
     }
 }
 @media screen and (max-width: 475px) {
-    #bar-chart {
-        /* visibility: hidden; */
+    .hide-chart {
         display: none;
     }
 }
 @media screen and (min-width: 475px) {
-    #bar-chart-note {
-        /* visibility: hidden; */
+    .hide-note {
         display: none;
     }
 }

@@ -92,7 +92,7 @@ window.onload = function() {
     var ctx5 = document.getElementById("fbi").getContext("2d");
     window.fbi = new Chart(ctx5).Line(lineDataFBI, {
       bezierCurve: false,
-      pointDotRadius: 3,
+      pointDotRadius: 2.5,
       pointHitDetectionRadius : 5
     });
 };
@@ -122,7 +122,7 @@ var lineDataFBI = {
     datasets: [
         {
             label: "Denver Homicides 1985-2015",
-            fillColor: "rgba(0,0,0,0.2)",
+            fillColor: "rgba(0,0,0,0.1)",
             strokeColor: "rgba(0,0,0,0.3)",
             pointColor: "rgba(0,0,0,0.6)",
             pointStrokeColor: "rgba(0,0,0,0.3",
