@@ -93,7 +93,7 @@ window.onload = function() {
     window.fbi = new Chart(ctx5).Line(lineDataFBI, {
       bezierCurve: false,
       pointDotRadius: 3,
-      pointHitDetectionRadius : 10
+      pointHitDetectionRadius : 5
     });
 };
 
