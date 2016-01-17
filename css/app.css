@@ -573,39 +573,6 @@ canvas {
     text-decoration:none;
     cursor:pointer;
 }
-div#footer-bar {
-    background:#fff;
-    -webkit-box-shadow:0px -2px 3px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow:0px -2px 3px rgba(0, 0, 0, 0.15);
-    box-shadow:0px -2px 3px rgba(0, 0, 0, 0.15);
-    color:#555;
-    padding:1em 1em 1.5em;
-}
-div#footer-bar ul.social {
-    margin:0 auto;
-    position:absolute;
-    left:45%;
-    top:1em;
-}
-div#footer-bar ul.social li {
-    padding:0 .5em;
-    float:left;
-    display:inline-block;
-}
-@media (max-width:540px) {
-    div#footer-bar p.small {
-        max-width:50%;
-        text-align:left;
-    }
-    div#footer-bar ul.social {
-        right:1em;
-        top:.6em;
-        left:auto;
-    }
-    div#footer-bar {
-        padding: .5em 1em .5em;
-    }
-}
 
 /* Social icons */
 .social-icons {
@@ -616,4 +583,8 @@ div#footer-bar ul.social li {
     margin-right: 5px;
     margin-bottom: 0px;
     margin-top: 0px;
+}
+
+#footer {
+    margin-bottom: 25px;
 }
