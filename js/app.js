@@ -6,7 +6,7 @@ $(document).ready(function() {
   $('.single-item').slick({
     centerMode: false,
     centerPadding: '0px',
-    dots: true,
+    dots: false,
     /* Just changed this to get the bottom dots navigation 
     infinite: false,
     speed: 300,

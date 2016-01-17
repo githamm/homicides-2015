@@ -19,10 +19,11 @@ h1.main-hed {
 }
 h2.sub-hed {
     font-family: Georgia, serif;
-    font-size: 36px;
+    font-size: 33px;
     font-style: italic;
-    margin-bottom: 30px;
-    line-height: 32px;
+    margin-bottom: 50px;
+    line-height: 39px;
+    letter-spacing: 0.5px;
 }
 p.graphic-hed {
     font-family: Georgia, serif;
@@ -480,4 +481,102 @@ canvas {
     .hide-note {
         display: none;
     }
+}
+
+.row.adcubes {
+    margin-top:4em;
+    margin-bottom:8em;
+}
+.row.adcubes div.adcube-wrap {
+    text-align:center;
+}
+.row.adcubes div.adcube-wrap > div {
+    width:300px;
+    margin:0 auto;
+}
+#adwrapper a.boxclose:hover {
+    color:#333;
+}
+#adwrapper .boxclose:before {
+    content:"\2715";
+    text-decoration:none;
+}
+#adwrapper {
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+    background:#f5f5f5;
+    -webkit-box-shadow:0px -2px 3px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow:0px -2px 3px rgba(0, 0, 0, 0.25);
+    box-shadow:0px -2px 3px rgba(0, 0, 0, 0.25);
+    overflow:hidden;
+    display:none;
+    z-index:99999;
+}
+#adwrapper #adframewrapper {
+    margin:4px auto;
+    overflow:hidden;
+}
+#adwrapper a.boxclose {
+    position:absolute;
+    top:6px;
+    right:4px;
+    width:30px;
+    height:30px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:28px;
+    font-weight:bold;
+    display:none;
+    color:#666;
+    line-height:0;
+    padding:13px 6px;
+    z-index:599999;
+    text-decoration:none;
+    cursor:pointer;
+}
+div#footer-bar {
+    background:#fff;
+    -webkit-box-shadow:0px -2px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow:0px -2px 3px rgba(0, 0, 0, 0.15);
+    box-shadow:0px -2px 3px rgba(0, 0, 0, 0.15);
+    color:#555;
+    padding:1em 1em 1.5em;
+}
+div#footer-bar ul.social {
+    margin:0 auto;
+    position:absolute;
+    left:45%;
+    top:1em;
+}
+div#footer-bar ul.social li {
+    padding:0 .5em;
+    float:left;
+    display:inline-block;
+}
+@media (max-width:540px) {
+    div#footer-bar p.small {
+        max-width:50%;
+        text-align:left;
+    }
+    div#footer-bar ul.social {
+        right:1em;
+        top:.6em;
+        left:auto;
+    }
+    div#footer-bar {
+        padding: .5em 1em .5em;
+    }
+}
+
+/* Social icons */
+.social-icons {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    float: right;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
