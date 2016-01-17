@@ -87,6 +87,36 @@ var pieDataSex = [
     }
 ];
 
+var pieDataGang = [
+    {
+        value: 23,
+        color: "rgba(0,0,0,0.8)",
+        highlight: "rgba(114,143,206,1.0)",
+        label: "Gang-related"
+    },
+    {
+        value: 27,
+        color: "rgba(0,0,0,0.5)",
+        highlight: "rgba(114,143,206,1.0)",
+        label: "Not gang-related"
+    }
+];
+
+var pieDataArrest = [
+    {
+        value: 28,
+        color: "rgba(0,0,0,0.8)",
+        highlight: "rgba(114,143,206,1.0)",
+        label: "Arrest made"
+    },
+    {
+        value: 22,
+        color: "rgba(0,0,0,0.5)",
+        highlight: "rgba(114,143,206,1.0)",
+        label: "No arrest"
+    }
+];
+
 window.onload = function() {
 	var ctx1 = document.getElementById("ethnicity").getContext("2d");
 	window.ethnicity = new Chart(ctx1).Pie(pieDataEthnicity, {
@@ -96,9 +126,17 @@ window.onload = function() {
 	window.cause = new Chart(ctx2).Pie(pieDataCause, {
 	});
 
-	var ctx3 = document.getElementById("sex").getContext("2d");
+	/* var ctx3 = document.getElementById("sex").getContext("2d");
 	window.sex = new Chart(ctx3).Pie(pieDataSex, {
-	});
+	}); */
+
+    var ctx6 = document.getElementById("gang").getContext("2d");
+    window.gang = new Chart(ctx6).Pie(pieDataGang, {
+    });
+
+    var ctx7 = document.getElementById("arrest").getContext("2d");
+    window.arrest = new Chart(ctx7).Pie(pieDataArrest, {
+    });
 
     var ctx4 = document.getElementById("brennan").getContext("2d");
     window.brennan = new Chart(ctx4).Bar(barDataBrennan, {
