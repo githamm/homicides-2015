@@ -90,11 +90,11 @@ p.graphic-hed {
 }
 p.graphic-intro {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 21px;
 }
 p.graphic-intro-inset {
     font-size: 17px;
-    line-height: 18px;
+    line-height: 20px;
     margin-bottom: 0px;
 }
 p {
@@ -118,6 +118,7 @@ p.cutline {
 	font-family: Georgia, serif;
 	font-size: 15px;
 	line-height: 19px;
+	margin-top: 6px;
 }
 p.section-hed {
     font-size: 19px;
