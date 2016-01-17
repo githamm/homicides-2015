@@ -120,6 +120,7 @@ p.table-title {
     font-style: italic;
     text-align: center;
     margin-bottom: 3px;
+    line-height: 24px;
 }
 p.pie-title {
     font-family: Helvetica, Arial, sans-serif;
@@ -128,6 +129,10 @@ p.pie-title {
     line-height: 20px;
     text-align: center;
     margin-bottom: -5px;
+}
+p.footer-text {
+    font-family: Georgia, Arial, sans-serif;
+    font-size: 18px;
 }
 p.popup {
     font-family: Helvetica, Arial, sans-serif;
@@ -153,10 +158,10 @@ table.simple {
     border: none;
 }
 .simple th.city {
-    width: 25%;
+    width: 30%;
 }
 .simple th.year {
-    width: 15%;
+    width: 14%;
 }
 .simple th {
     border: none;
@@ -459,14 +464,14 @@ canvas {
 } */
 .opener {
     background-image: url('../img/eastside_PUL_015.jpg');
-    background-position: 50% 50%;
+    /background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-attachment: fixed; /* absolute */
-    height: 80%;
+    background-attachment: absolute; /* fixed */
+    height: 100%;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -519,7 +524,23 @@ canvas {
         display: none;
     }
 }
-
+@media screen and (max-width: 715px) {
+    #calendar-graphic {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    h1.main-hed {
+        font-size: 42px;
+        line-height: 44px;
+    }
+}
+@media screen and (max-width: 500px) {
+    h2.sub-hed {
+        font-size: 28px;
+        line-height: 32px
+    }
+}
 .row.adcubes {
     margin-top:4em;
     margin-bottom:8em;
@@ -586,5 +607,5 @@ canvas {
 }
 
 #footer {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 }
