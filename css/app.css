@@ -75,6 +75,7 @@ h2.sub-hed {
     font-family: Georgia, serif;
     font-size: 33px;
     font-style: italic;
+    margin-top: 25px;
     margin-bottom: 50px;
     line-height: 39px;
     letter-spacing: 0.5px;
@@ -91,6 +92,7 @@ p.graphic-hed {
 p.graphic-intro {
     font-size: 18px;
     line-height: 21px;
+    margin-top: 25px;
 }
 p.graphic-intro-inset {
     font-size: 17px;
@@ -101,6 +103,7 @@ p {
     font-family: Georgia, serif;
     font-size: 22px;
     letter-spacing: .4px;
+    margin-bottom: 25px;
 }
 p.byline {
     font-family: Georgia, serif;
@@ -152,6 +155,7 @@ p.source {
     font-size: 13px;
     font-style: italic;
     text-align: right;
+    line-height: 16px;
     margin-top: -10px;
 }
 p.chart-note {
@@ -188,6 +192,7 @@ p.pie-title {
 p.footer-text {
     font-family: Georgia, serif;
     font-size: 18px;
+    line-height: 23px;
 }
 p.popup {
     font-family: Helvetica, Arial, sans-serif;
@@ -283,7 +288,7 @@ img.image-sidebar {
 }
 hr.graphic-spacing {
     margin-top: 35px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 #dot-legend {
     margin-top: -5px;
@@ -624,4 +629,8 @@ canvas {
 
 #footer {
     margin-bottom: 40px;
+}
+.ndn_embed {
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
