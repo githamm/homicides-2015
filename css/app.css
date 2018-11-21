@@ -101,8 +101,7 @@ p.graphic-intro-inset {
 }
 p {
     font-family: Georgia, serif;
-    font-size: 22px;
-    letter-spacing: .4px;
+    font-size: 21px;
     margin-bottom: 25px;
 }
 p.byline {
@@ -525,7 +524,7 @@ canvas {
 @media screen and (max-width: 600px) {
     .sidebar {
         float: left;
-        width: 90%;
+        width: 100%;
         border-top: 2px solid rgba(0, 0, 0, 0.1);
         border-bottom: 2px solid rgba(0, 0, 0, 0.1);
         border-left: none;
